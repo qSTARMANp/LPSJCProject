@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+} 
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+/*밑줄 제거*/
+
+a:visited{
+    color: black;
+}
+a:active{
+    color: black;
+}
+ 
+/*링크 색깔*/
+
+body{
+    margin: 0 auto;
+    padding: 0;
+} 
+/*초기화*/
+
+#bar{
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 15px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+#nav-bar{
+    margin-left: auto;
+}
+
+#nav-bar li{
+   width: 80px; 
+   display:inline-block; 
+}
+
+#nav-bar li:nth-of-type(5){
+    margin-left: 60px;
+}
+/*상단 바*/
