@@ -1,0 +1,10 @@
+넥슨 Lv.1 고딕 Bold
+https://noonnu.cc/font_page/430
+
+웹폰트로 사용
+@font-face {
+    font-family: 'NEXON Lv2 Gothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
