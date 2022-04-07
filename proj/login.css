@@ -1,3 +1,10 @@
+@font-face {
+    font-family: '넥슨폰트';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -80,6 +87,7 @@ main{
     text-align: center;
     border-radius: 5px;
     font-size: 20px;
+    font-family: 넥슨폰트;
 }
 
 li{

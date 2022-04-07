@@ -1,3 +1,10 @@
+@font-face {
+    font-family: '넥슨폰트';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -112,12 +119,18 @@ body{
     text-align: center;
     margin: auto;
 }
+#gamename{
+    font-family: 넥슨폰트;
+}
+#gamestory{
+    font-family: 넥슨폰트;
+}
 
   /* 이미지 */
 .jb-a {
     width: 400px;
     margin: 0px auto;
-    position: relative
+    position: relative;
   }
 .jb-c {
     position: absolute;

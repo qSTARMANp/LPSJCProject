@@ -1,3 +1,10 @@
+@font-face {
+    font-family: '넥슨폰트';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -72,6 +79,17 @@ main{
     position: relative;
 }
 
+#foot{
+
+    background-color: black;
+    margin-top: 130px;
+    text-align: center;
+}
+#foot-font{
+    color: white;
+    font-size: 15px;
+}
+
 #table-head{
     text-align: center;
 }
@@ -81,6 +99,8 @@ main{
     margin-top: 50px;
     text-align: center;
     width: 50%;
+    font-family: 넥슨폰트;
+    font-size: 60px;
 }
 #table-body{
     height: 50px;
@@ -121,4 +141,54 @@ table{
 }
 th,td{
     padding: 11px;
+}
+
+#button{
+    width: 45px;
+    height: 60%;
+    background-color: aqua;
+    color: black;
+}
+
+.made{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.made a{
+    margin-left: 1000px;
+    display: block;
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 50px;
+    border:1px solid #e6e6e6;
+    line-height:50px;
+    text-align: center;
+    font-family: 넥슨폰트;
+}
+
+.page li{
+    list-style: none;
+}
+.page{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.page a{
+    display: block;
+    margin: 0 3px;
+    float: left;
+    width: 25px;
+    height: 25px;
+    border:1px solid #e6e6e6;
+    line-height:28px;
+    text-align:center;
+    font-family: 넥슨폰트;
+}
+.page a:hover{
+    background-color: black;
+    color: white;
 }
