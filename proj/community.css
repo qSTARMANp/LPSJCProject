@@ -9,7 +9,7 @@ body{
     margin: 0;
     padding: 0;
 } 
-
+/*초기화*/
 a {
     text-decoration-line: none;
     color: black;
@@ -20,17 +20,11 @@ a {
 a:visited{
     color: black;
 }
-a:active{
-    color: black;
-}
+a:hover{
+    color: red;
+ }
  
 /*링크 색깔*/
-
-body{
-    margin: 0 auto;
-    padding: 0;
-} 
-/*초기화*/
 
 #bar{
     top: 0;
@@ -100,7 +94,7 @@ main{
     text-align: center;
     width: 50%;
     font-family: 넥슨폰트;
-    font-size: 60px;
+    font-size: 50px;
 }
 #table-body{
     height: 50px;
@@ -145,8 +139,8 @@ th,td{
 
 #button{
     width: 45px;
-    height: 60%;
-    background-color: aqua;
+    height: 63%;
+    background-color: white;
     color: black;
 }
 

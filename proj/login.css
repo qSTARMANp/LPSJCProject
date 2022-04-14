@@ -20,9 +20,9 @@ a {
 a:visited{
     color: black;
 }
-a:active{
-    color: black;
-}
+a:hover{
+    color: red;
+ }
  
 /*링크 색깔*/
 
