@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="id.css">
 </head>
-
 <body>
     <nav id="bar">
         <!-- 네비게이션바 -->
@@ -27,29 +25,40 @@
         </div>
     </header>
 
-
-    <main>
-        <section class="login-section">
-            <ul>
-			<div class="login-id">	
-				<input id="id" placeholder="User Id" type="text"></input>
-			</div>
-			<div class="login-password">	
-				<input id="pass" placeholder="Password" type="password"></input>
-			</div>
-        <a href="#" class="button"><div>로그인</div></a>
+    <div id="content">
+        <div>
+            <h3>
+                <label for="id">이름</label>
+            </h3>
+            <span class="box int_id">
+                <input type="text" id="id" class="int" maxlength="20">
+            </span>
+            <div>
+                <h3>
+                    <label for="id">이메일</label>
+                </h3>
+                <span class="box int_id">
+                    <input type="text" id="id" class="int" maxlength="20">
+                </span>
+    
+            <div class="btn_area">
+                <button id ="btnJoin"type="button">
+                    <span>아이디 찾기</span>
+                </button>
+             </div>
+        </div>
         <li class="find">
-            <a href="./new.html">회원가입</a>
+            <a href="./login.html">로그인</a>
             <span>|</span>
-            <a href="./id.html">아이디 찾기</a>
+            <a href="./new.html">회원가입</a>
             <span>|</span>
             <a href="./password.html">비밀번호 찾기</a>
         </li>
-        </ul>
-    </main>
-</body>
-<footer id="foot">
-    <span id="foot-font">DHU copyright &copy; 2022</span>
-</footer>
+    </div>
+</div>
 
+    <footer id="foot">
+        <span id="foot-font">DHU copyright &copy; 2022</span>
+    </footer>
+</body>
 </html>
