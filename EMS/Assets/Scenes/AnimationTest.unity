@@ -568,7 +568,8 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: d41b5e5ebc57b1240a43e2bb60bb36a6, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1084919909025085659, guid: ef65bc097eaf1104d861abc894f8a74e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ef65bc097eaf1104d861abc894f8a74e, type: 3}
 --- !u!1001 &9207196612489830187
 PrefabInstance:
@@ -578,8 +579,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3363095045697223875, guid: 4105a255c6a054c4e807c1db4f67b025, type: 3}
-      propertyPath: m_CullingMode
+      propertyPath: m_UpdateMode
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363095045697223875, guid: 4105a255c6a054c4e807c1db4f67b025, type: 3}
+      propertyPath: m_CullingMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363095045697223875, guid: 4105a255c6a054c4e807c1db4f67b025, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8288841408201440259, guid: 4105a255c6a054c4e807c1db4f67b025, type: 3}
       propertyPath: m_Name
