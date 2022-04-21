@@ -64,7 +64,7 @@ table{
     font-size: 23px;
     border-radius: 5px;
 }
-#submit{
+#write{
     margin-top: 25px;
     margin-right: auto;
     margin-left: auto;
@@ -76,12 +76,17 @@ table{
     border: 2px solid black;
 }
 textarea{
-    height: 100px;
-    width: 1000px;
+    height: 145px;
+    width: 1100px;
+    font-size: 20px;
 }
-input{
-    height: 50px;
-    width: 50px;
+#submit{
+    height: 150px;
+    width: 150px;
+    font-size: 25px;
+}
+#box{
+    display: flex;
 }
 #list{
     margin-top: 25px;
@@ -92,7 +97,7 @@ input{
     opacity: 0.7;
     font-size: 15px;
     border-radius: 5px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 .title{
     width: 500px;
@@ -106,6 +111,10 @@ input{
     width: 150px;
     text-align: center;
 }
+#write-table{
+    margin: 0;
+}
+
 #foot{
     background-color: black;
     margin-top: 50px;
