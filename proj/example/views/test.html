@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    
+    <form id="listForm1">
+        <h1>Input ID</h1>
+        <input type="text">
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        const listForm = document.querySelector("#listForm"),
+            input = listForm.querySelector("input");
+
+        $(document).ready( function() {
+            console.log("test page is running");
+        })
+
+        function id_check(inputId) {
+            $.ajax({
+                url: '/api/id_check',
+                dataType: "json",
+                type: "POST",
+                data: {
+                    input_id : inputId
+                },
+                success: (res) => {
+                    if(res.length == 1){
+                        console.log(res);
+                        console.log(res[0].id);
+                        console.log(`${inputId} ` + "is exist")
+                    }
+                    else{
+                        console.log("no");
+                    }
+                },
+                error: (err) => {
+                    console.log(err)
+                }
+            })
+        }
+
+        function submitList(e) {  
+            e.preventDefault();   // 새로고침을 안함
+            const inputId = input.value; // 입력창에 현재 입력된 값을 저장
+            id_check(inputId); // 저장된 텍스트를 리스트의 함수 인자로 보냄
+            input.value = ""; // 입력창 빈칸으로 초기화
+        }
+
+        function init() {
+            listForm.addEventListener("submit", submitList); //실행 - 리스트폼
+        }
+        init();
+
+    </script>
+</body>
+</html>
